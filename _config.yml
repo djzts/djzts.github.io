@@ -1,13 +1,13 @@
 # Site settings
-  title: 筚路蓝缕，以启山林
-  SEOTitle: Zhongqi的博客 | ZZQ Blog
+  title: 作业课程网
+  SEOTitle: 谢海红的博客 | xiehaihong's Blog
   header-img: img/post-bg-desk.jpg
-  email: djzts@gmail.com
-  description: "Welcome in my friends."
-  keyword: "DJZTS, DJZTS Blog, zzq的博客, Zhongqi, BJTU, HKUST, UMN, EE"
-  url: "http://djzts.github.io"          # your host, for absolute URL
+  email: hhxie@bjtu.edu.cn
+  description: "交通运输学院谢海红教授课程网页"
+  keyword: "谢海红,交通运输学院,北京交通大学"
+  url: "http://bjtuxiehh.github.io"          # your host, for absolute URL
   baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-  github_repo: "https://github.com/djzts/djzts.github.io.git" # you code repository
+  github_repo: "https://github.com/bjtuxiehh/bjtuxiehh.github.io.git" # you code repository
 
 # Sidebar settings
   sidebar: true                           # whether or not using Sidebar.
@@ -20,9 +20,9 @@
 
 # SNS settings
   RSS: false
-  weibo_username:     2271001337
+#  weibo_username:     2271001337
 #zhihu_username:     灵活三分死胖子
-  github_username:    djzts
+  github_username:    bjtuxiehh
 #facebook_username:
 #jianshu_username:
 #twitter_username:
@@ -61,14 +61,14 @@ gems: [jekyll-paginate]
 # Disqus（https://disqus.com/）
 # disqus_username: qiubaiying
 
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: c04ef5c3d67c30cd933f                            #生成的clientID
-  clientSecret: 7971b22bef325463805612eae63e07bf41131dc6    #生成的clientSecret
-  repo: djzts.github.io    #仓库名称
-  owner: djzts    #github用户名
-  admin: djzts
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+#gitalk:
+  #enable: true    #是否开启Gitalk评论
+  #clientID: c04ef5c3d67c30cd933f                            #生成的clientID
+  #clientSecret: 7971b22bef325463805612eae63e07bf41131dc6    #生成的clientSecret
+  #repo: djzts.github.io    #仓库名称
+  #owner: djzts    #github用户名
+  #admin: djzts
+  #distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -100,8 +100,8 @@ gitalk:
 # Friends
   friends: [
       {
-          title: "UMN/ 明尼苏达大学",
-          href: "https://twin-cities.umn.edu/"
+          title: "北京交通大学交通运输学院",
+          href: "http://trans.bjtu.edu.cn/cms/"
       },{
         title: "BJTU/ 北京交通大学",
         href: "https://www.bjtu.edu.cn/"
