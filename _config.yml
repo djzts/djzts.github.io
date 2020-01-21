@@ -57,18 +57,18 @@ gems: [jekyll-paginate]
 
 
 
- 评论系统
+# 评论系统
 # Disqus（https://disqus.com/）
 # disqus_username: qiubaiying
 
-#gitalk:
-  #enable: true    #是否开启Gitalk评论
-  #clientID: c04ef5c3d67c30cd933f                            #生成的clientID
-  #clientSecret: 7971b22bef325463805612eae63e07bf41131dc6    #生成的clientSecret
-  #repo: djzts.github.io    #仓库名称
-  #owner: djzts    #github用户名
-  #admin: djzts
-  #distractionFreeMode: true #是否启用类似FB的阴影遮罩
+gitalk:
+  enable: false    #是否开启Gitalk评论
+  clientID: c04ef5c3d67c30cd933f                            #生成的clientID
+  clientSecret: 7971b22bef325463805612eae63e07bf41131dc6    #生成的clientSecret
+  repo: djzts.github.io    #仓库名称
+  owner: djzts    #github用户名
+  admin: djzts
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
