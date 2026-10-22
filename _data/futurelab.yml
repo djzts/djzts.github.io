@@ -5,17 +5,27 @@
 #   summary / summary_zh   One or two sentences
 #   status                 idea | building | live   (构思中 / 开发中 / 已上线)
 #   tags                   List of short labels
+#   url                    Main link; the thumbnail and title open it
+#   image / image_zh       Optional screenshot thumbnail (16:10), image_zh shown in Chinese mode
 #   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
 #   placeholder            true marks a sample entry; delete the entry once real ideas are in
 
-- title: Bridge Bidding Trainer
-  title_zh: 桥牌叫牌练习器
+- title: Bridge Studio
+  title_zh: 桥间 · 叫牌练习器
   summary: >-
-    Fill in your own convention card or pick a preset one. The page deals the hands, you choose
-    whether all four hands are visible, the opponents' are hidden, or your partner's too, and then
-    practice bidding while partner and opponents bid from their own cards.
+    A bilingual bridge bidding trainer. Set up each side's system and conventions, choose which hands
+    are visible, then bid against partner and opponents who bid from their own cards, with explanations
+    and a review of every deal.
   summary_zh: >-
-    填好自己的体系卡（或选用预设体系），网页自动发牌。可以选择四家明手、隐藏对手的牌，或者连队友的牌也隐藏，然后自己练习叫牌，队友和对手会根据各自的牌自动叫牌。
-  status: idea
+    中英双语的桥牌叫牌练习器。分别设置双方的体系和约定叫，选择显示哪几家的牌，然后和按各自手牌自动叫牌的队友、对手一起练习，每个叫品都有解释，打完可以复盘。
+  status: live
   tags: [Bridge, Bidding, Web App]
-  links: []
+  url: /bridge-bidding-practice/
+  image: /assets/img/futurelab/bridge-studio-en.jpg
+  image_zh: /assets/img/futurelab/bridge-studio-zh.jpg
+  links:
+    - label: Open app
+      label_zh: 打开练习器
+      url: /bridge-bidding-practice/
+    - label: GitHub
+      url: https://github.com/djzts/bridge-bidding-practice
