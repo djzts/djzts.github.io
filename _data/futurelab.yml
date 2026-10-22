@@ -10,6 +10,26 @@
 #   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
 #   placeholder            true marks a sample entry; delete the entry once real ideas are in
 
+- title: Guandan Studio
+  title_zh: 掼蛋研习室
+  summary: >-
+    A bilingual Guandan hand arrangement lab. Deal, group your cards, assign heart-level wild cards,
+    compare suggested arrangements, play against basic computer opponents one action at a time,
+    and replay any branch of the hand.
+  summary_zh: >-
+    中英双语的掼蛋理牌练习器：自动发牌、手动组牌、红心配牌、同花顺提示，比较几种参考理牌方案，和电脑一步步对局，还能从任意一步分支复盘。
+  status: live
+  tags: [Guandan, Card Game, Web App]
+  url: /Guandan-Studio/
+  image: /assets/img/futurelab/guandan-studio-en.jpg
+  image_zh: /assets/img/futurelab/guandan-studio-zh.jpg
+  links:
+    - label: Open app
+      label_zh: 打开练习器
+      url: /Guandan-Studio/
+    - label: GitHub
+      url: https://github.com/djzts/Guandan-Studio
+
 - title: Bridge Studio
   title_zh: 桥间 · 叫牌练习器
   summary: >-
