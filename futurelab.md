@@ -24,11 +24,17 @@ subtitle: Ideas, prototypes, and side projects by Zhongqi (Thomas) Zhao.
   <div class="lab-grid">
     {% for idea in site.data.futurelab %}
     <article class="lab-card{% if idea.placeholder %} placeholder{% endif %}" data-status="{{ idea.status }}">
+      {% if idea.image %}
+      <a class="lab-thumb" href="{{ idea.url | default: idea.image | relative_url }}">
+        {% if idea.image_zh %}<img data-lang="en" src="{{ idea.image | relative_url }}" alt="{{ idea.title }} screenshot" loading="lazy"><img data-lang="zh" src="{{ idea.image_zh | relative_url }}" alt="{{ idea.title_zh | default: idea.title }} 截图" loading="lazy">{% else %}<img src="{{ idea.image | relative_url }}" alt="{{ idea.title }} screenshot" loading="lazy">{% endif %}
+      </a>
+      {% endif %}
       <div class="lab-card-head">
         <span class="lab-status {{ idea.status }}">{% include lab-status.html status=idea.status %}</span>
         {% if idea.placeholder %}<span class="lab-sample"><span data-lang="en">Sample</span><span data-lang="zh">示例</span></span>{% endif %}
       </div>
-      <h3>{% if idea.title_zh %}<span data-lang="en">{{ idea.title }}</span><span data-lang="zh">{{ idea.title_zh }}</span>{% else %}{{ idea.title }}{% endif %}</h3>
+      {% capture idea_title %}{% if idea.title_zh %}<span data-lang="en">{{ idea.title }}</span><span data-lang="zh">{{ idea.title_zh }}</span>{% else %}{{ idea.title }}{% endif %}{% endcapture %}
+      <h3>{% if idea.url %}<a href="{{ idea.url | relative_url }}">{{ idea_title }}</a>{% else %}{{ idea_title }}{% endif %}</h3>
       <p>{% if idea.summary_zh %}<span data-lang="en">{{ idea.summary }}</span><span data-lang="zh">{{ idea.summary_zh }}</span>{% else %}{{ idea.summary }}{% endif %}</p>
       {% if idea.tags.size > 0 %}
       <div class="tag-row">
@@ -37,7 +43,7 @@ subtitle: Ideas, prototypes, and side projects by Zhongqi (Thomas) Zhao.
       {% endif %}
       {% if idea.links.size > 0 %}
       <div class="lab-links">
-        {% for link in idea.links %}<a class="button small ghost" href="{{ link.url | relative_url }}">{{ link.label }}</a>{% endfor %}
+        {% for link in idea.links %}<a class="button small{% unless forloop.first and idea.url %} ghost{% endunless %}" href="{{ link.url | relative_url }}">{% if link.label_zh %}<span data-lang="en">{{ link.label }}</span><span data-lang="zh">{{ link.label_zh }}</span>{% else %}{{ link.label }}{% endif %}</a>{% endfor %}
       </div>
       {% endif %}
     </article>
