@@ -1,0 +1,33 @@
+# FutureLAB ideas. Add one entry per idea; the page at /futurelab/ renders them in order.
+#
+# Fields:
+#   title / title_zh       Idea name (title_zh optional, shown when the site is in Chinese)
+#   summary / summary_zh   One or two sentences
+#   status                 idea | building | live   (构思中 / 开发中 / 已上线)
+#   tags                   List of short labels
+#   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
+#   placeholder            true marks a sample entry; delete the entry once real ideas are in
+
+- title: HQC-Bend
+  title_zh: HQC-Bend 混合量子经典 Benders 分解
+  summary: >-
+    A hybrid quantum-classical multi-cut Benders decomposition toolkit that hands the
+    master problem to a quantum annealer and keeps the subproblems on classical solvers.
+  summary_zh: >-
+    混合量子经典的多割 Benders 分解工具包：主问题交给量子退火求解，子问题仍用经典求解器。
+  status: live
+  tags: [Quantum, Optimization, Python]
+  links:
+    - label: GitHub
+      url: https://github.com/djzts/HQCMCBD-API
+
+- title: Your next idea
+  title_zh: 下一个 idea
+  summary: >-
+    Placeholder card. Replace it with a real idea: what it is, why it matters, and where to try it.
+  summary_zh: >-
+    示例卡片，之后换成真正的 idea：它是什么、为什么有意思、在哪里可以试。
+  status: idea
+  tags: [Placeholder]
+  placeholder: true
+  links: []

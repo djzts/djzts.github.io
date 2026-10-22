@@ -1088,6 +1088,83 @@ h3 {
   font-weight: 600;
 }
 
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.lab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.lab-card.hidden {
+  display: none;
+}
+
+.lab-card.placeholder {
+  border-style: dashed;
+  background: var(--soft);
+}
+
+.lab-card h3,
+.lab-card p {
+  margin: 0;
+}
+
+.lab-card p {
+  color: #47525d;
+}
+
+.lab-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lab-status,
+.lab-sample {
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.lab-status {
+  background: #fff0cf;
+  color: #755313;
+}
+
+.lab-status.building {
+  background: var(--accent-pale);
+  color: var(--accent-dark);
+}
+
+.lab-status.live {
+  background: #e9f3df;
+  color: #3f6337;
+}
+
+.lab-sample {
+  border: 1px dashed var(--muted);
+  color: var(--muted);
+}
+
+.lab-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -1131,7 +1208,8 @@ h3 {
   }
 
   .topic-grid,
-  .metrics {
+  .metrics,
+  .lab-grid {
     grid-template-columns: 1fr;
   }
 

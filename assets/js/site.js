@@ -135,3 +135,16 @@ if (tagButtons.length > 0) {
   window.addEventListener("hashchange", () => applyTagFilter(tagFromHash()));
   applyTagFilter(tagFromHash());
 }
+
+const labButtons = document.querySelectorAll("[data-lab-filter]");
+const labCards = document.querySelectorAll(".lab-card[data-status]");
+
+labButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const status = button.dataset.labFilter;
+    labButtons.forEach((item) => item.classList.toggle("active", item === button));
+    labCards.forEach((card) => {
+      card.classList.toggle("hidden", status !== "all" && card.dataset.status !== status);
+    });
+  });
+});
