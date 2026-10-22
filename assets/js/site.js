@@ -148,3 +148,39 @@ labButtons.forEach((button) => {
     });
   });
 });
+
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+const applyTheme = (theme) => {
+  document.documentElement.dataset.theme = theme;
+  if (themeToggle) {
+    const isDark = theme === "dark";
+    themeToggle.textContent = isDark ? "☀" : "☾";
+    themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  }
+};
+
+const savedTheme = () => {
+  try {
+    return localStorage.getItem("siteTheme");
+  } catch (error) {
+    return null;
+  }
+};
+
+applyTheme(savedTheme() || (darkQuery.matches ? "dark" : "light"));
+
+darkQuery.addEventListener("change", (event) => {
+  if (!savedTheme()) applyTheme(event.matches ? "dark" : "light");
+});
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem("siteTheme", nextTheme);
+    } catch (error) {}
+    applyTheme(nextTheme);
+  });
+}

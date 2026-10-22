@@ -10,7 +10,34 @@
   --accent-pale: #e3f2fb;
   --gold: #9c7a34;
   --shadow: 0 12px 28px rgba(36, 86, 116, 0.08);
+  --body: #47525d;
+  --faint: #7d8790;
+  --code-bg: #f5f7f8;
+  --header-bg: #6aaed6;
+  --button-bg: #3d7fa6;
+  --notice-line: #bad9ed;
   color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #11161b;
+  --panel: #171e25;
+  --ink: #e1e7ec;
+  --muted: #9ba7b2;
+  --line: #2a3640;
+  --soft: #1a2631;
+  --accent: #6aaed6;
+  --accent-dark: #8ec5e6;
+  --accent-pale: #1d3240;
+  --gold: #d2ae63;
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  --body: #c3ccd4;
+  --faint: #8794a0;
+  --code-bg: #1c242c;
+  --header-bg: #1f4a63;
+  --button-bg: #3d7fa6;
+  --notice-line: #2f5873;
+  color-scheme: dark;
 }
 
 * {
@@ -44,7 +71,7 @@ a {
   gap: 24px;
   min-height: 58px;
   padding: 0 clamp(18px, 4vw, 56px);
-  background: #6aaed6;
+  background: var(--header-bg);
   color: #fff;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16);
 }
@@ -143,7 +170,7 @@ main {
   width: 168px;
   height: 168px;
   margin: 0 auto 24px;
-  border: 5px solid #fff;
+  border: 5px solid var(--bg);
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -173,7 +200,7 @@ main {
 
 .sidebar-department {
   margin: 0;
-  color: #7d8790;
+  color: var(--faint);
   font-weight: 650;
 }
 
@@ -271,7 +298,7 @@ main {
   border: 1px solid var(--accent-dark);
   border-radius: 8px;
   padding: 8px 14px;
-  background: var(--accent-dark);
+  background: var(--button-bg);
   color: #fff;
   font: inherit;
   font-size: 0.92rem;
@@ -300,7 +327,7 @@ main {
 }
 
 .filter-button.active {
-  background: var(--year-bg, var(--accent-dark));
+  background: var(--year-bg, var(--button-bg));
   border-color: var(--year-border, var(--accent-dark));
   color: var(--year-fg, #fff);
   box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.04);
@@ -380,7 +407,7 @@ h3 {
 .prose,
 .section-lead {
   max-width: 780px;
-  color: #47525d;
+  color: var(--body);
 }
 
 .prose p,
@@ -391,7 +418,7 @@ h3 {
 .notice {
   margin-top: 24px;
   padding: 20px 24px;
-  border: 1px solid #bad9ed;
+  border: 1px solid var(--notice-line);
   border-left: 5px solid var(--accent);
   border-radius: 8px;
   background: var(--soft);
@@ -857,7 +884,7 @@ h3 {
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #f6f7f5;
+  background: var(--code-bg);
 }
 
 .clean-list {
@@ -914,7 +941,7 @@ h3 {
 
 .skill-list dd {
   margin: 0;
-  color: #47525d;
+  color: var(--body);
 }
 
 .course-list {
@@ -988,7 +1015,7 @@ h3 {
 
 .post-card p {
   margin: 0 0 10px;
-  color: #47525d;
+  color: var(--body);
 }
 
 .post-card .post-subtitle,
@@ -1061,7 +1088,7 @@ h3 {
   overflow-x: auto;
   padding: 14px 16px;
   border-radius: 8px;
-  background: #f4f7fa;
+  background: var(--code-bg);
 }
 
 .post-pager {
@@ -1096,6 +1123,8 @@ h3 {
 }
 
 .lab-card {
+  min-width: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1116,7 +1145,9 @@ h3 {
 }
 
 .lab-thumb img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top left;
@@ -1154,7 +1185,7 @@ html[lang="zh"] .lab-thumb img[data-lang="zh"] {
 }
 
 .lab-card p {
-  color: #47525d;
+  color: var(--body);
 }
 
 .lab-card-head {
@@ -1288,3 +1319,39 @@ html[lang="zh"] p[data-lang="zh"],
 html[lang="zh"] section[data-lang="zh"] {
   display: block;
 }
+
+.theme-toggle {
+  min-width: 30px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Dark mode: pastel palettes (set in CSS or by site.js) are blended into the dark panel,
+   and pale badges are inverted so their hue stays but light text sits on a dark chip. */
+:root[data-theme="dark"] .research-thread {
+  background: color-mix(in srgb, var(--research-bg, var(--panel)) 8%, var(--panel));
+  border-color: color-mix(in srgb, var(--research-border, var(--line)) 22%, var(--line));
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .publication-card {
+  background: color-mix(in srgb, var(--publication-bg, var(--panel)) 8%, var(--panel));
+  border-color: color-mix(in srgb, var(--publication-border, var(--line)) 22%, var(--line));
+}
+
+:root[data-theme="dark"] .award-list li {
+  background: color-mix(in srgb, var(--award-bg, var(--panel)) 8%, var(--panel));
+  border-color: color-mix(in srgb, var(--award-border, var(--line)) 22%, var(--line));
+}
+
+:root[data-theme="dark"] .badge,
+:root[data-theme="dark"] .lab-status,
+:root[data-theme="dark"] [data-year-filter] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+:root[data-theme="dark"] .scholar-wordcloud img,
+:root[data-theme="dark"] .post-body img {
+  filter: brightness(0.9);
+}
+
