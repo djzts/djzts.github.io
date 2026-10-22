@@ -1,0 +1,21 @@
+# FutureLAB ideas. Add one entry per idea; the page at /futurelab/ renders them in order.
+#
+# Fields:
+#   title / title_zh       Idea name (title_zh optional, shown when the site is in Chinese)
+#   summary / summary_zh   One or two sentences
+#   status                 idea | building | live   (构思中 / 开发中 / 已上线)
+#   tags                   List of short labels
+#   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
+#   placeholder            true marks a sample entry; delete the entry once real ideas are in
+
+- title: Bridge Bidding Trainer
+  title_zh: 桥牌叫牌练习器
+  summary: >-
+    Fill in your own convention card or pick a preset one. The page deals the hands, you choose
+    whether all four hands are visible, the opponents' are hidden, or your partner's too, and then
+    practice bidding while partner and opponents bid from their own cards.
+  summary_zh: >-
+    填好自己的体系卡（或选用预设体系），网页自动发牌。可以选择四家明手、隐藏对手的牌，或者连队友的牌也隐藏，然后自己练习叫牌，队友和对手会根据各自的牌自动叫牌。
+  status: idea
+  tags: [Bridge, Bidding, Web App]
+  links: []
