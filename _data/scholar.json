@@ -2,11 +2,105 @@
   "source": "Google Scholar",
   "profileUrl": "https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en",
   "authorId": "7p-fiAsAAAAJ",
-  "lastUpdated": "2026-10-22T00:30:51.470Z",
-  "totalCitations": null,
-  "hIndex": null,
-  "i10Index": null,
-  "citationHistory": [],
-  "knownScholarArticles": [],
+  "lastUpdated": "2026-10-22T02:31:33.376Z",
+  "totalCitations": 235,
+  "hIndex": 6,
+  "i10Index": 6,
+  "citationHistory": [
+    {
+      "year": 2022,
+      "citations": 15
+    },
+    {
+      "year": 2023,
+      "citations": 15
+    },
+    {
+      "year": 2024,
+      "citations": 59
+    },
+    {
+      "year": 2025,
+      "citations": 73
+    },
+    {
+      "year": 2026,
+      "citations": 72
+    }
+  ],
+  "knownScholarArticles": [
+    {
+      "title": "Hybrid quantum benders’ decomposition for mixed-integer linear programming",
+      "year": 2022,
+      "publication": "2022 IEEE Wireless Communications and Networking Conference (WCNC), 2536-2540, 2022",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy",
+      "year": 2024,
+      "publication": "ACS nano 18 (11), 8143-8156, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "title": "Optimal data center energy management with hybrid quantum-classical multi-cuts benders' decomposition method",
+      "year": 2023,
+      "publication": "IEEE Transactions on Sustainable Energy 15 (2), 847-858, 2023",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:Y0pCki6q_DkC"
+    },
+    {
+      "title": "Minimizing delay in network function visualization with quantum computing",
+      "year": 2021,
+      "publication": "2021 IEEE 18th International Conference on Mobile Ad Hoc and Smart Systems …, 2021",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:qjMakFHDy7sC"
+    },
+    {
+      "title": "CPPU: Policy space diversity for informative path planning and GAI-enabled updating CSI in ISAC",
+      "year": 2024,
+      "publication": "IEEE Transactions on Cognitive Communications and Networking 11 (2), 777-790, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:YsMSGLbcyi4C"
+    },
+    {
+      "title": "QAOA-assisted benders' decomposition for mixed-integer linear programming",
+      "year": 2024,
+      "publication": "ICC 2024-IEEE International Conference on Communications, 1127-1132, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "Optimal energy and IT service emergency schedule for Internet data center",
+      "year": 2024,
+      "publication": "2024 56th North American Power Symposium (NAPS), 1-6, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:UeHWp8X0CEIC"
+    },
+    {
+      "title": "Lagrangian relaxation based parallelized quantum annealing and its application in network function virtualization",
+      "year": 2024,
+      "publication": "IEEE Open Journal of the Communications Society 5, 4260-4274, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "title": "Quantum Computing for Cable-Routing Problem in Solar Power Plants",
+      "year": 2023,
+      "publication": "2023 North American Power Symposium (NAPS), 1-6, 2023",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Multi-cuts Benders’ Decomposition Algorithm",
+      "year": 2025,
+      "publication": "2025 International Conference on Quantum Communications, Networking, and …, 2025",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:eQOLeE2rZwMC"
+    },
+    {
+      "title": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Benders’ Decomposition",
+      "year": 2025,
+      "publication": "IEEE INFOCOM 2025-IEEE Conference on Computer Communications Workshops …, 2025",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "title": "Spatial-Temporal PV Hosting Capacity Estimation and Evaluation",
+      "year": 2024,
+      "publication": "2024 IEEE Power & Energy Society General Meeting (PESGM), 1-5, 2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:zYLM7Y9cAGgC"
+    }
+  ],
   "recentCitations": []
 }
