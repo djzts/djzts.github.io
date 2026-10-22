@@ -1,0 +1,81 @@
+{
+  "name": "Zhongqi Zhao",
+  "englishName": "Thomas",
+  "pronouns": "",
+  "title": "Postdoctoral Research Associate",
+  "institution": "Brookhaven National Laboratory",
+  "institutionShort": "Brookhaven",
+  "institutionSub": "National Laboratory",
+  "location": "Upton, New York",
+  "email": "zhao0680@alumni.umn.edu",
+  "photo": "/assets/img/profile.jpg",
+  "googleScholar": "https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en",
+  "googleScholarUser": "7p-fiAsAAAAJ",
+  "github": "https://github.com/djzts",
+  "linkedin": "https://www.linkedin.com/in/zthomasZhao/",
+  "cv": "",
+  "researchAreas": [
+    "Quantum computing",
+    "Power system optimization",
+    "Energy system management"
+  ],
+  "education": [
+    {
+      "period": "2024.12 - Present",
+      "role": "Postdoctoral Research Associate",
+      "institution": "Brookhaven National Laboratory, Upton, NY"
+    },
+    {
+      "period": "2025.06 - 2025.08",
+      "role": "PSS/E Software Developer Engineering Intern",
+      "institution": "Siemens / Acara Solutions Inc., Houston, TX"
+    },
+    {
+      "period": "2023.06 - 2023.08",
+      "role": "Graduate Summer Intern",
+      "institution": "National Renewable Energy Laboratory (NREL), Golden, CO"
+    },
+    {
+      "period": "2020 - 2025.08",
+      "role": "Ph.D., Electrical and Computer Engineering",
+      "institution": "University of Houston, Houston, TX",
+      "supervisor": "Dr. Lei Fan & Dr. Zhu Han",
+      "note": "Dissertation: Hybrid Quantum-Classical Optimization for Data Center Energy System"
+    },
+    {
+      "period": "2020.05",
+      "role": "M.S., Electrical Engineering",
+      "institution": "University of Minnesota - Twin Cities, Minneapolis, MN"
+    },
+    {
+      "period": "2018.05",
+      "role": "B.S., Electrical Engineering and Mathematics",
+      "institution": "University of Minnesota - Twin Cities / Beijing Jiaotong University (Joint Program)"
+    }
+  ],
+  "skills": [
+    { "group": "Programming & Tools", "items": "Python, MATLAB, Julia, LaTeX (advanced); Java, Fortran 90 (intermediate)" },
+    { "group": "Optimization & Modeling", "items": "JuMP, Gurobi (advanced); Pyomo, CPLEX, GEKKO, D-Wave Ocean (intermediate)" },
+    { "group": "Power & Energy Tools", "items": "PowerWorld Simulator, OpenDSSDirect.py (advanced); PSS/E, OPAL-RT (intermediate)" },
+    { "group": "Data & Visualization", "items": "NumPy, Pandas, JSON (advanced); Bokeh, Tkinter (intermediate)" }
+  ],
+  "teaching": [
+    { "code": "ELET4103", "name": "Computer Based Power Distribution and Transmission Laboratory", "instructor": "Dr. Wajiha Shireen" },
+    { "code": "ELET3402", "name": "Communications Circuits", "instructor": "Ms. Chandrayee Soneja and Dr. Gandhimathi Velusamy" },
+    { "code": "ELET2101", "name": "Poly-Phase Circuits and Transformers Laboratory", "instructor": "Dr. Lei Fan" },
+    { "code": "ELET4302", "name": "Data Communication Systems", "instructor": "Dr. Ahmed Abdelhadi" },
+    { "code": "ECE6335", "name": "Digital Control Systems", "instructor": "Dr. Robert Provence" },
+    { "code": "ECE3337", "name": "Signals and Systems Analysis", "instructor": "Dr. Rohith Reddy and Dr. Badrinath Roysam" },
+    { "code": "ELET2301", "name": "Poly-phase Circuits and Transformers", "instructor": "Dr. Lei Fan" }
+  ],
+  "awards": [
+    "🏅 Best Poster Presentation Honorable Mention, Monitoring, Prognosis and Control for Resiliency of Energy Infrastructure System (REIS) Workshop, 2024",
+    "🎓 Chevron Energy Graduate Fellow, University of Houston, 2024",
+    "💼 AEE Foundation Scholarship Fellow, Association of Energy Engineering (AEE) Foundation, 2024"
+  ],
+  "bio": [
+    "Zhongqi (Thomas) Zhao is a Postdoctoral Research Associate at Brookhaven National Laboratory, working on quantum computing for AC optimal power flow and machine learning pipelines for underground power-grid fault location.",
+    "Zhongqi's research sits at the intersection of quantum computing and power and energy systems: hybrid quantum-classical decomposition algorithms for mixed-integer programming, data center energy management, and distribution grid analytics such as PV hosting capacity, fault location, isolation and service restoration, and protection device placement.",
+    "Zhongqi received a Ph.D. in Electrical and Computer Engineering from the University of Houston in 2025, advised by Dr. Lei Fan and Dr. Zhu Han, and M.S. and B.S. degrees from the University of Minnesota - Twin Cities, the B.S. through a joint program with Beijing Jiaotong University."
+  ]
+}

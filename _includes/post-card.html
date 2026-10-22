@@ -1,0 +1,11 @@
+<article class="post-card" data-tags="{{ include.post.tags | join: '|' | escape }}">
+  <p class="eyebrow">{{ include.post.date | date: '%Y.%m.%d' }}</p>
+  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+  {% if include.post.subtitle and include.post.subtitle != 'N/A' %}<p class="post-subtitle">{{ include.post.subtitle }}</p>{% endif %}
+  <p>{{ include.post.content | strip_html | replace: 'Your browser does not support HTML5 video.', '' | replace: 'u know it', '' | strip_newlines | truncate: 120 }}</p>
+  {% if include.post.tags.size > 0 %}
+  <div class="tag-row">
+    {% for tag in include.post.tags %}<a class="tag-chip" href="{{ '/blog/' | relative_url }}#{{ tag | uri_escape }}">{{ tag }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</article>

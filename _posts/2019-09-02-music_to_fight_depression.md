@@ -1,5 +1,4 @@
 ---
-layout:     post
 title:      防治抑郁，听影流之主有感
 subtitle:   实在太魔性了，我出不去了。
 date:       2019-09-02
@@ -7,10 +6,8 @@ author:     DJZTS
 header-img: img/post_bg_1.jpg
 catalog: true
 tags:
-    - 土嗨
+    - 音乐
     - EDM
-    - Music
-    - DJZTS
 ---
 
 ## 前言

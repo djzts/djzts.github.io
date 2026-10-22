@@ -1,19 +1,29 @@
+# Zhongqi (Thomas) Zhao
 
+**Zhongqi (Thomas) Zhao** is a Postdoctoral Research Associate at Brookhaven National Laboratory. The research connects quantum computing with power and energy systems: hybrid quantum-classical decomposition algorithms for mixed-integer programming, quantum computing for AC optimal power flow, data center energy management, and distribution grid analytics.
 
-博客的搭建教程来源自 [qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io)
+## Research Interests
 
+- Quantum computing and hybrid quantum-classical optimization
+- Power system optimization
+- Energy system management
+- Distribution grid analytics: PV hosting capacity, FLISR, protection optimization, fault location
 
->
-### [查看博客戳这里 👈](https://djzts.github.io)
+## Academic Training
 
-## 致谢
+- Ph.D., Electrical and Computer Engineering, University of Houston, 2025 (advisors: Dr. Lei Fan & Dr. Zhu Han)
+- M.S., Electrical Engineering, University of Minnesota - Twin Cities, 2020
+- B.S., Electrical Engineering and Mathematics, University of Minnesota - Twin Cities / Beijing Jiaotong University (joint program), 2018
 
-1. 这个模板是从这里 [qiubaiying](https://github.com/qiubaiying/qiubaiying.github.io)  fork 的, 感谢这个作者。
-2. 感谢 Jekyll、Github Pages！
+## Software
 
+- [HQC-Bend](https://github.com/djzts/HQCMCBD-API): hybrid quantum-classical multi-cut Benders' decomposition in Python
 
-### 正在施工，会渐渐的和fork的原模板产生差异
+## Links
 
-<audio ref='https://raw.githubusercontent.com/myName/myRepo/master/vendor/assets/music/Tetris.mp3' autoPlay loop></audio>
+- Website: https://djzts.github.io
+- Google Scholar: https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en
+- LinkedIn: https://www.linkedin.com/in/zthomasZhao/
+- Email: zhao0680@alumni.umn.edu
 
-
+Site maintenance notes live in [docs/README.md](docs/README.md). The layout is adapted from [michellechang14.github.io](https://github.com/michellechang14/michellechang14.github.io).
