@@ -8,26 +8,14 @@
 #   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
 #   placeholder            true marks a sample entry; delete the entry once real ideas are in
 
-- title: HQC-Bend
-  title_zh: HQC-Bend 混合量子经典 Benders 分解
+- title: Bridge Bidding Trainer
+  title_zh: 桥牌叫牌练习器
   summary: >-
-    A hybrid quantum-classical multi-cut Benders decomposition toolkit that hands the
-    master problem to a quantum annealer and keeps the subproblems on classical solvers.
+    Fill in your own convention card or pick a preset one. The page deals the hands, you choose
+    whether all four hands are visible, the opponents' are hidden, or your partner's too, and then
+    practice bidding while partner and opponents bid from their own cards.
   summary_zh: >-
-    混合量子经典的多割 Benders 分解工具包：主问题交给量子退火求解，子问题仍用经典求解器。
-  status: live
-  tags: [Quantum, Optimization, Python]
-  links:
-    - label: GitHub
-      url: https://github.com/djzts/HQCMCBD-API
-
-- title: Your next idea
-  title_zh: 下一个 idea
-  summary: >-
-    Placeholder card. Replace it with a real idea: what it is, why it matters, and where to try it.
-  summary_zh: >-
-    示例卡片，之后换成真正的 idea：它是什么、为什么有意思、在哪里可以试。
+    填好自己的体系卡（或选用预设体系），网页自动发牌。可以选择四家明手、隐藏对手的牌，或者连队友的牌也隐藏，然后自己练习叫牌，队友和对手会根据各自的牌自动叫牌。
   status: idea
-  tags: [Placeholder]
-  placeholder: true
+  tags: [Bridge, Bidding, Web App]
   links: []
