@@ -24,6 +24,6 @@
 - Website: https://djzts.github.io
 - Google Scholar: https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en
 - LinkedIn: https://www.linkedin.com/in/zthomasZhao/
-- Email: zzhao27@uh.edu
+- Email: zhao0680@alumni.umn.edu
 
 Site maintenance notes live in [docs/README.md](docs/README.md). The layout is adapted from [michellechang14.github.io](https://github.com/michellechang14/michellechang14.github.io).
