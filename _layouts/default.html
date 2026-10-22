@@ -1,22 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle | escape }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="icon" href="{{ '/img/favicon.ico' | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}#biography"><span data-lang="en">Biography</span><span data-lang="zh">简介</span></a>
+        <a href="{{ '/' | relative_url }}#news"><span data-lang="en">News</span><span data-lang="zh">动态</span></a>
+        <a href="{{ '/' | relative_url }}#research"><span data-lang="en">Research</span><span data-lang="zh">研究</span></a>
+        <a href="{{ '/publications/' | relative_url }}"><span data-lang="en">Publications</span><span data-lang="zh">论文</span></a>
+        <a href="{{ '/' | relative_url }}#education"><span data-lang="en">Experience</span><span data-lang="zh">经历</span></a>
+        <a href="{{ '/' | relative_url }}#honors"><span data-lang="en">Honors</span><span data-lang="zh">荣誉</span></a>
+        <a href="{{ '/blog/' | relative_url }}"><span data-lang="en">Blog</span><span data-lang="zh">博客</span></a>
+        <a href="{{ '/scholar/' | relative_url }}">Scholar</a>
+        <a href="{{ '/' | relative_url }}#contact"><span data-lang="en">Contact</span><span data-lang="zh">联系</span></a>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">中文</button>
+      </nav>
+    </header>
 
-{% include head.html %}
+    <main>
+      {{ content }}
+    </main>
 
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
-
-    {% include nav.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-
-<!-- Image to hack wechat -->
-<img src="/img/apple-touch-icon.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
-</body>
-
+    <footer class="site-footer">
+      <p>© {{ site.time | date: '%Y' }} {{ site.data.profile.name }}</p>
+    </footer>
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  </body>
 </html>

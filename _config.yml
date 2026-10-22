@@ -1,109 +1,42 @@
-# Site settings
-  title: 筚路蓝缕，以启山林
-  SEOTitle: Zhongqi的博客 | ZZQ Blog
-  header-img: img/post-bg-desk.jpg
-  email: djzts@gmail.com
-  description: "Welcome in my friends."
-  keyword: "DJZTS, DJZTS Blog, zzq的博客, Zhongqi, BJTU, HKUST, UMN, EE"
-  url: "http://djzts.github.io"          # your host, for absolute URL
-  baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-  github_repo: "https://github.com/djzts/djzts.github.io.git" # you code repository
+title: "Zhongqi (Thomas) Zhao"
+description: "Academic homepage and blog of Zhongqi (Thomas) Zhao: quantum computing, power system optimization, and energy system management."
+url: "https://djzts.github.io"
+baseurl: ""
+timezone: America/New_York
 
-# Sidebar settings
-  sidebar: true                           # whether or not using Sidebar.
-  sidebar-about-description: "关键词：ECE, UH, UMN, HKUST, BJTU, Who am I?"
-  sidebar-avatar: /img/profile.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-  
-  show_downloads: true
+# Keep the old blog URLs (/2019/08/15/新博客正式开通/) working.
+permalink: pretty
 
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publication
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
-# SNS settings
-  RSS: false
-  weibo_username:     2271001337
-#zhihu_username:     灵活三分死胖子
-  github_username:    djzts
-#facebook_username:
-#jianshu_username:
-#twitter_username:
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-  permalink: pretty
-  paginate: 10
-  exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-  anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-  markdown: kramdown
-  highlighter: rouge
-  kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
-
- 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
-
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: c04ef5c3d67c30cd933f                            #生成的clientID
-  clientSecret: 7971b22bef325463805612eae63e07bf41131dc6    #生成的clientSecret
-  repo: djzts.github.io    #仓库名称
-  owner: djzts    #github用户名
-  admin: djzts
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
-
-
-# 统计
-
-# Analytics settings
-# Baidu Analytics
-#ba_track_id: b50bf2b12b5338a1845e33832976fd68
-
-# Google Analytics
-#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-#ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-
-
-
-
-# Featured Tags
-  featured-tags: true                     # 是否使用首页标签
-  featured-condition-size: 2              # 相同标签数量大于这个数，才会出现在首页
-
-
-
-# Progressive Web Apps
-  chrome-tab-theme-color: "#000001"
-  service-worker: true
-
-
-
-# Friends
-  friends: [
-      {
-          title: "UMN/ 明尼苏达大学",
-          href: "https://twin-cities.umn.edu/"
-      },{
-        title: "BJTU/ 北京交通大学",
-        href: "https://www.bjtu.edu.cn/"
-      }
-      ]
+exclude:
+  - README.md
+  - NEWS_TAGS.md
+  - package.json
+  - scripts/
+  - docs/
+  - LICENSE

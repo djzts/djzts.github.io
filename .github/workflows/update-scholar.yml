@@ -1,0 +1,42 @@
+name: Update Scholar Metrics
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+    inputs:
+      bootstrap_publications:
+        description: "Import all unmatched Scholar publications once"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  update-scholar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Update Scholar data
+        env:
+          SCHOLAR_AUTHOR_ID: 7p-fiAsAAAAJ
+          SCHOLAR_PROFILE_URL: https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en
+          SERPAPI_MAX_CITED_BY_LOOKUPS: 2
+          SERPAPI_MAX_ABSTRACT_LOOKUPS: 2
+          SCHOLAR_PUBLICATIONS_BOOTSTRAP: ${{ github.event.inputs.bootstrap_publications || 'false' }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY || secrets.GOOGLESCHOLARAPI }}
+        run: npm run update:scholar
+      - name: Commit Scholar data
+        id: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Scholar metrics and news"
+          file_pattern: _data/scholar.json _includes/news.md _publications/*.md
