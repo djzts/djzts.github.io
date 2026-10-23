@@ -4,6 +4,11 @@
 </article>
 
 <article class="news-item">
+  <time>2025.12</time>
+  <p><span class="badge career">CAREER</span> <span data-lang="en">Joined Brookhaven National Laboratory as a Postdoctoral Research Associate.</span><span data-lang="zh">加入布鲁克海文国家实验室，任博士后研究员。</span></p>
+</article>
+
+<article class="news-item">
   <time>2025.08</time>
   <p><span class="badge career">CAREER</span> <span data-lang="en">Received the Ph.D. in Electrical and Computer Engineering from the University of Houston. Dissertation: <em>Hybrid Quantum-Classical Optimization for Data Center Energy System</em>.</span><span data-lang="zh">获得休斯顿大学电子与计算机工程博士学位，博士论文：<em>Hybrid Quantum-Classical Optimization for Data Center Energy System</em>。</span></p>
 </article>
@@ -11,11 +16,6 @@
 <article class="news-item">
   <time>2025</time>
   <p><span class="badge paper">PAPER</span><span class="badge conference">CONFERENCE</span><span class="badge qcnc">QCNC</span><span class="badge software">SOFTWARE</span> <em>HQC-Bend: A Python Package of Hybrid Quantum-Classical Multi-cuts Benders' Decomposition Algorithm</em> appeared at <strong>QCNC 2025</strong>. Code: <a href="https://github.com/djzts/HQCMCBD-API">djzts/HQCMCBD-API</a>.</p>
-</article>
-
-<article class="news-item">
-  <time>2024.12</time>
-  <p><span class="badge career">CAREER</span> <span data-lang="en">Joined Brookhaven National Laboratory as a Postdoctoral Research Associate.</span><span data-lang="zh">加入布鲁克海文国家实验室，任博士后研究员。</span></p>
 </article>
 
 <article class="news-item">
