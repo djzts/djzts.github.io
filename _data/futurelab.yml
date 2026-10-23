@@ -5,6 +5,7 @@
 #   summary / summary_zh   One or two sentences
 #   status                 idea | building | live   (构思中 / 开发中 / 已上线)
 #   tags                   List of short labels
+#   repo                   owner/name on GitHub; its version is checked daily and shown as "Title (vX.Y)"
 #   url                    Main link; the thumbnail and title open it
 #   image / image_zh       Optional screenshot thumbnail (16:10), image_zh shown in Chinese mode
 #   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
@@ -19,6 +20,7 @@
   summary_zh: >-
     中英双语的掼蛋理牌练习器：自动发牌、手动组牌、红心配牌、同花顺提示，比较几种参考理牌方案，和电脑一步步对局，还能从任意一步分支复盘。
   status: live
+  repo: djzts/Guandan-Studio
   tags: [Guandan, Card Game, Web App]
   url: /Guandan-Studio/
   image: /assets/img/futurelab/guandan-studio-en.jpg
@@ -39,6 +41,7 @@
   summary_zh: >-
     中英双语的桥牌叫牌练习器。分别设置双方的体系和约定叫，选择显示哪几家的牌，然后和按各自手牌自动叫牌的队友、对手一起练习，每个叫品都有解释，打完可以复盘。
   status: live
+  repo: djzts/bridge-bidding-practice
   tags: [Bridge, Bidding, Web App]
   url: /bridge-bidding-practice/
   image: /assets/img/futurelab/bridge-studio-en.jpg

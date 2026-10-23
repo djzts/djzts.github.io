@@ -1,0 +1,27 @@
+name: Update FutureLAB Versions
+
+on:
+  schedule:
+    - cron: "41 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Check idea versions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run update:futurelab
+      - name: Commit versions
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update FutureLAB versions"
+          file_pattern: _data/futurelab_versions.json
