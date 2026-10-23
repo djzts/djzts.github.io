@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "update:scholar": "node scripts/update-scholar.mjs"
+    "update:scholar": "node scripts/update-scholar.mjs",
+    "update:futurelab": "node scripts/update-futurelab-versions.mjs"
   }
 }

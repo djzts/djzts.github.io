@@ -33,7 +33,9 @@ subtitle: Ideas, prototypes, and side projects by Zhongqi (Thomas) Zhao.
         <span class="lab-status {{ idea.status }}">{% include lab-status.html status=idea.status %}</span>
         {% if idea.placeholder %}<span class="lab-sample"><span data-lang="en">Sample</span><span data-lang="zh">示例</span></span>{% endif %}
       </div>
-      {% capture idea_title %}{% if idea.title_zh %}<span data-lang="en">{{ idea.title }}</span><span data-lang="zh">{{ idea.title_zh }}</span>{% else %}{{ idea.title }}{% endif %}{% endcapture %}
+      {% assign idea_version = site.data.futurelab_versions[idea.repo].version %}
+      {% capture version_label %}{% if idea_version %} (v{{ idea_version }}){% endif %}{% endcapture %}
+      {% capture idea_title %}{% if idea.title_zh %}<span data-lang="en">{{ idea.title }}{{ version_label }}</span><span data-lang="zh">{{ idea.title_zh }}{{ version_label }}</span>{% else %}{{ idea.title }}{{ version_label }}{% endif %}{% endcapture %}
       <h3>{% if idea.url %}<a href="{{ idea.url | relative_url }}">{{ idea_title }}</a>{% else %}{{ idea_title }}{% endif %}</h3>
       <p>{% if idea.summary_zh %}<span data-lang="en">{{ idea.summary }}</span><span data-lang="zh">{{ idea.summary_zh }}</span>{% else %}{{ idea.summary }}{% endif %}</p>
       {% if idea.tags.size > 0 %}
