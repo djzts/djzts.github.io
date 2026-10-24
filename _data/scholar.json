@@ -2,8 +2,8 @@
   "source": "Google Scholar",
   "profileUrl": "https://scholar.google.com/citations?user=7p-fiAsAAAAJ&hl=en",
   "authorId": "7p-fiAsAAAAJ",
-  "lastUpdated": "2026-10-23T14:15:57.235Z",
-  "totalCitations": 236,
+  "lastUpdated": "2026-10-24T13:21:40.524Z",
+  "totalCitations": 237,
   "hIndex": 6,
   "i10Index": 6,
   "citationHistory": [
@@ -25,7 +25,7 @@
     },
     {
       "year": 2026,
-      "citations": 73
+      "citations": 74
     }
   ],
   "knownScholarArticles": [
@@ -72,6 +72,12 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:UeHWp8X0CEIC"
     },
     {
+      "title": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Multi-cuts Benders’ Decomposition Algorithm",
+      "year": 2025,
+      "publication": "2025 International Conference on Quantum Communications, Networking, and …, 2025",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:eQOLeE2rZwMC"
+    },
+    {
       "title": "Lagrangian relaxation based parallelized quantum annealing and its application in network function virtualization",
       "year": 2024,
       "publication": "IEEE Open Journal of the Communications Society 5, 4260-4274, 2024",
@@ -82,12 +88,6 @@
       "year": 2023,
       "publication": "2023 North American Power Symposium (NAPS), 1-6, 2023",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:2osOgNQ5qMEC"
-    },
-    {
-      "title": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Multi-cuts Benders’ Decomposition Algorithm",
-      "year": 2025,
-      "publication": "2025 International Conference on Quantum Communications, Networking, and …, 2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7p-fiAsAAAAJ&pagesize=100&citation_for_view=7p-fiAsAAAAJ:eQOLeE2rZwMC"
     },
     {
       "title": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Benders’ Decomposition",
@@ -104,11 +104,11 @@
   ],
   "recentCitations": [
     {
-      "title": "A Hybrid Quantum-Classical Benders Decomposition Framework for Solving Quadratic-Linear Bilevel Programming Problems",
-      "authors": "KM Lan",
-      "venue": "KM Lan - IEEE Access, 2026 - ieeexplore.ieee.org",
+      "title": "Quantum-Classical Hybrid Methods for Optimization: Lessons from Classical Decomposition",
+      "authors": "DEB Neira",
+      "venue": "DEB Neira - arXiv preprint arXiv:2610.27362, 2026 - arxiv.org",
       "year": 2026,
-      "url": "https://ieeexplore.ieee.org/abstract/document/11506371/",
+      "url": "https://arxiv.org/abs/2610.27362",
       "sourcePublication": "HQC-Bend: A Python Package of Hybrid Quantum-Classical Multi-cuts Benders' Decomposition Algorithm"
     },
     {
@@ -117,62 +117,6 @@
       "venue": "Y Fan, J Zhang, Z Wang, Y Ren, Z Li, D Luo - Progress in Natural Science …, 2026 - Elsevier",
       "year": 2026,
       "url": "https://www.sciencedirect.com/science/article/pii/S1002007126001498",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "A modular in situ cancer vaccine platform incorporating an ICD inducer and Lycium barbarum polysaccharide for potent immunotherapy",
-      "authors": "LQ Zhao, CJ Bao, YN Liu, XF Liang, MQ Liu",
-      "venue": "LQ Zhao, CJ Bao, YN Liu, XF Liang, MQ Liu… - … Composites and Hybrid …, 2026 - Springer",
-      "year": 2026,
-      "url": "https://link.springer.com/article/10.1007/s42114-026-01860-1",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "Nanocatalysts as Emerging Immunomodulators for Enhanced Antitumor Immunotherapy",
-      "authors": "J Wang, J Guo, T Cui, L Lin",
-      "venue": "J Wang, J Guo, T Cui, L Lin - ACS Nano Medicine, 2026 - ACS Publications",
-      "year": 2026,
-      "url": "https://pubs.acs.org/doi/abs/10.1021/acsnanomed.6c00015",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "Novel therapeutic strategies for tumor treatment via regulation of the ferroptosis mechanism using artemisinin derivatives and nanomedicines",
-      "authors": "X Wang, J Li, Y Wang, J Shi, P Ren, Z Yin",
-      "venue": "X Wang, J Li, Y Wang, J Shi, P Ren, Z Yin… - The FASEB …, 2026 - Wiley Online Library",
-      "year": 2026,
-      "url": "https://faseb.onlinelibrary.wiley.com/doi/abs/10.1096/fj.202503778R",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "DHA/Fe2+-doped porphyrin COFs enable ROS-amplified multimodal tumor therapy",
-      "authors": "Q Sun, Y Song, R Liu, W Pan, Y Gao, Y Li",
-      "venue": "Q Sun, Y Song, R Liu, W Pan, Y Gao, Y Li… - Chemical …, 2026 - pubs.rsc.org",
-      "year": 2026,
-      "url": "https://pubs.rsc.org/cc/article-abstract/62/25/6731/1235296",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "Layered double hydroxide-induced modulation of oxidative stress in disease therapy",
-      "authors": "J Wang, O Su, Z Meng, L Lu, Y Qi, Z Zhang, Z Li",
-      "venue": "J Wang, O Su, Z Meng, L Lu, Y Qi, Z Zhang, Z Li… - Biomedicine & …, 2026 - Elsevier",
-      "year": 2026,
-      "url": "https://www.sciencedirect.com/science/article/pii/S0753332226000958",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "Transforming glioblastoma treatment: Magnetothermal induction of biomimetic ROS storm agents for autophagy-enhanced ferroptosis",
-      "authors": "X Yang, Y Wu, J Zhan, R Liu, X Liu, J Fang",
-      "venue": "X Yang, Y Wu, J Zhan, R Liu, X Liu, J Fang… - Chemical Engineering …, 2026 - Elsevier",
-      "year": 2026,
-      "url": "https://www.sciencedirect.com/science/article/pii/S1385894726005048",
-      "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
-    },
-    {
-      "title": "Shooting two hawks with one arrow: manganese-doped mesoporous carriers coordinate STING activation and enhanced mRNA translation for in situ cytokine …",
-      "authors": "Y Yan, L Chen, Y Wu, X Qu, X Ma, X Sun, G Xiang",
-      "venue": "Y Yan, L Chen, Y Wu, X Qu, X Ma, X Sun, G Xiang… - Materials Today Bio, 2026 - Elsevier",
-      "year": 2026,
-      "url": "https://www.sciencedirect.com/science/article/pii/S259000642600044X",
       "sourcePublication": "A cancer nanovaccine based on an FeAl-layered double hydroxide framework for reactive oxygen species-augmented metalloimmunotherapy"
     }
   ]
