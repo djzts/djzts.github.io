@@ -11,7 +11,7 @@ code: ""
 slides: ""
 scholar_citation_id: "7p-fiAsAAAAJ:WF5omc3nYNoC"
 scholar_cites_id: ""
-abstract: ""
+abstract: "In this demo, we introduce a new Python library for solving mixed-integer linear programming (MILP) problems based on the hybrid quantum-classical multi-cuts Benders’ decomposition (HQC-Bend) algorithm. By partitioning large MILPs into smaller master and sub-problems, the algorithm iteratively refines solutions, and strategically integrates quantum computing for the master problem (MAP) while utilizing classical approaches for others, achieving greater computational efficiency. The Python library can run the master problem on the quantum machine and the subproblems on classical computers. Experiment results demonstrated how the Python library can run the MILP instance."
 citation: ""
 ---
 
