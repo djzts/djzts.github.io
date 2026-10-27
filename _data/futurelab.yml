@@ -11,6 +11,29 @@
 #   links                  List of { label, url }; a url under /xxx/ can point to repo djzts/xxx on GitHub Pages
 #   placeholder            true marks a sample entry; delete the entry once real ideas are in
 
+- title: HQC-Bend
+  title_zh: HQC-Bend 混合量子经典 Benders 分解
+  summary: >-
+    An open-source Python package for hybrid quantum-classical multi-cut Benders decomposition.
+    Give it a Gurobi model: the binary master problem goes to a quantum or quantum-inspired annealer,
+    the continuous subproblems stay on classical solvers, and cuts are added until the bounds meet.
+  summary_zh: >-
+    开源的混合量子经典多割 Benders 分解 Python 工具包。输入一个 Gurobi 模型，二进制主问题交给量子或类量子退火器求解，连续子问题留在经典求解器上，不断加割直到上下界收敛。发表于 IEEE QCNC 2025。
+  status: live
+  repo: djzts/HQCMCBD-API
+  tags: [Quantum, Optimization, Python]
+  url: /HQCMCBD-API/
+  image: /assets/img/futurelab/hqc-bend.jpg
+  links:
+    - label: Project page
+      label_zh: 项目主页
+      url: /HQCMCBD-API/
+    - label: Cite
+      label_zh: 引用
+      url: /HQCMCBD-API/#cite
+    - label: GitHub
+      url: https://github.com/djzts/HQCMCBD-API
+
 - title: Guandan Studio
   title_zh: 掼蛋研习室
   summary: >-

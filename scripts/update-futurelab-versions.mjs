@@ -1,6 +1,6 @@
 // Reads every `repo:` in _data/futurelab.yml and records each repo's version in
 // _data/futurelab_versions.json. The latest GitHub release wins; otherwise the
-// "version" field of package.json on the default branch is used. Versions are
+// version in package.json, then pyproject.toml, on the default branch is used. Versions are
 // shortened to major.minor (0.2.0 -> 0.2), which the FutureLAB card titles show.
 import { readFile, writeFile } from "node:fs/promises";
 
@@ -32,11 +32,20 @@ const fetchVersion = async (repo) => {
   const fromRelease = shortVersion(release?.tag_name);
   if (fromRelease) return { version: fromRelease, source: "release" };
 
-  const response = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/package.json`, { headers: { "User-Agent": headers["User-Agent"] } });
-  if (response.ok) {
-    const fromPackage = shortVersion((await response.json()).version);
-    if (fromPackage) return { version: fromPackage, source: "package.json" };
-  }
+  const raw = async (file) => {
+    const response = await fetch(`https://raw.githubusercontent.com/${repo}/HEAD/${file}`, { headers: { "User-Agent": headers["User-Agent"] } });
+    return response.ok ? response.text() : null;
+  };
+
+  const packageJson = await raw("package.json");
+  const fromPackage = packageJson && shortVersion(JSON.parse(packageJson).version);
+  if (fromPackage) return { version: fromPackage, source: "package.json" };
+
+  // Python projects: version = "x.y.z" in pyproject.toml.
+  const pyproject = await raw("pyproject.toml");
+  const fromPyproject = shortVersion(pyproject?.match(/^version\s*=\s*["']([^"']+)["']/m)?.[1]);
+  if (fromPyproject) return { version: fromPyproject, source: "pyproject.toml" };
+
   return null;
 };
 
