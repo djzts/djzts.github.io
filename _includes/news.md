@@ -1,4 +1,9 @@
 <article class="news-item">
+  <time>2026</time>
+  <p><span class="badge paper">PAPER</span><span class="badge journal">JOURNAL</span> <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=7p-fiAsAAAAJ&amp;pagesize=100&amp;citation_for_view=7p-fiAsAAAAJ:ufrVoPGSRksC"><em>Optimal Energy and LLM Task Scheduling for Multiple Cloud Data Centers</em></a> appeared in <strong>arXiv preprint arXiv:2611.22242, 2026</strong>.</p>
+</article>
+
+<article class="news-item">
   <time>2026.10</time>
   <p><span class="badge site">SITE</span><span class="badge update">UPDATE</span> <span data-lang="en">Personal website redesigned as an academic homepage, with publications, Google Scholar tracking, and the original blog.</span><span data-lang="zh">个人网站改版为学术主页，新增论文列表、Google Scholar 引用追踪，并保留原有博客。</span></p>
 </article>
